@@ -28,7 +28,6 @@ function main()
     if autoupdate_loaded and enable_autoupdate and Update then
         pcall(Update.check, Update.json_url, Update.prefix, Update.url)
     end
-
 -- code
 print('Скрипт инициализирован')
     sampRegisterChatCommand("clc", cmd_clc)
@@ -42,4 +41,5 @@ function clc(msg)
         sampSendChat(result)
         else
             sampSendChat('Ошибка')
+    end
 end
