@@ -1,5 +1,5 @@
 script_name('calc')
-script_version('1')
+script_version('v1')
 script_author('Rotaru')
 
 local enable_autoupdate = true
