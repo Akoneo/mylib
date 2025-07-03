@@ -15,7 +15,7 @@ if enable_autoupdate then
             Update.url = "https://raw.githubusercontent.com/Akoneo/mylib/refs/heads/main/S/piska.lua"
         end
     end
-    print(Пробую остановить флуд)
+    print('Пробую остановить флуд')
     wait(5000)
 end
 
