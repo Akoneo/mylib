@@ -1,5 +1,5 @@
 script_name("piska_test")
-script_version("7")
+script_version("8")
 
 local socket = require 'socket'
 local enable_autoupdate = true
@@ -17,7 +17,7 @@ if enable_autoupdate then
             Update.url = "https://raw.githubusercontent.com/Akoneo/mylib/refs/heads/main/S/piska.lua"
         end
     end
-    socket.sleep(30)
+    socket.sleep(5)
 end
 
 function main()
