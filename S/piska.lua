@@ -1,5 +1,5 @@
 script_name('calc')
-script_version('v1')
+script_version('v2')
 script_author('Rotaru')
 
 local enable_autoupdate = true
@@ -19,6 +19,7 @@ if enable_autoupdate then
 end
 
 function main()
+    local ok, err = pcall(function ()
     if not isSampfuncsLoaded() or not isSampLoaded() then
         return
     end
@@ -32,7 +33,7 @@ function main()
 print('Скрипт инициализирован')
     sampRegisterChatCommand("clc", cmd_clc)
     wait(-1)
-end
+end)
 
 function clc(msg)
     msg = sampGetChatInputText()
@@ -42,4 +43,5 @@ function clc(msg)
         else
             sampSendChat('Ошибка')
     end
+end
 end
