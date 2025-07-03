@@ -16,7 +16,7 @@ if enable_autoupdate then
         end
     end
     print('Пробую остановить флуд')
-    wait(5000)
+    sleep(30)
 end
 
 function main()
