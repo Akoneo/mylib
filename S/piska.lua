@@ -1,5 +1,5 @@
 script_name("piska_test")
-script_version("autoupdatetest3")
+script_version("4")
 
 local enable_autoupdate = true
 local autoupdate_loaded = false
@@ -15,6 +15,8 @@ if enable_autoupdate then
             Update.url = "https://raw.githubusercontent.com/Akoneo/mylib/refs/heads/main/S/piska.lua"
         end
     end
+    print(Пробую остановить флуд)
+    wait(5000)
 end
 
 function main()
