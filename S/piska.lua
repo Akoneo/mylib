@@ -1,5 +1,5 @@
 script_name("piska_test")
-script_version("10")
+script_version("11")
 
 local enable_autoupdate = true
 local autoupdate_loaded = false
@@ -25,13 +25,14 @@ function main()
     while not isSampAvailable() do
         wait(100)
     end
-        print('Сейчас будет обновление')
-        wait(30000)
     if autoupdate_loaded and enable_autoupdate and Update then
         pcall(Update.check, Update.json_url, Update.prefix, Update.url)
     end
 
 -- code
 print('Скрипт инициализирован')
+
+
+
 
 end
