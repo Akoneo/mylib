@@ -9,7 +9,8 @@ if enable_autoupdate then
     if updater_loaded then
         autoupdate_loaded, Update = pcall(Updater)
         if autoupdate_loaded then
-            Update.json_url = "https://raw.githubusercontent.com/Akoneo/mylib/refs/heads/main/version.json" .. tostring(os.clock())
+            print('Идет обновление скрипта')
+            Update.json_url = "https://raw.githubusercontent.com/Akoneo/mylib/refs/heads/main/version.json?" .. tostring(os.clock())
             Update.prefix = "[" .. string.upper(thisScript().name) .. "]: "
             Update.url = "https://raw.githubusercontent.com/Akoneo/mylib/refs/heads/main/S/piska.lua"
         end
@@ -29,5 +30,6 @@ function main()
     end
 
 -- code
+print('Скрипт инициализирован')
 
 end
