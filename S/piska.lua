@@ -1,7 +1,6 @@
 script_name("piska_test")
-script_version("8")
+script_version("9")
 
-local socket = require 'socket'
 local enable_autoupdate = true
 local autoupdate_loaded = false
 local Update = nil
@@ -17,7 +16,6 @@ if enable_autoupdate then
             Update.url = "https://raw.githubusercontent.com/Akoneo/mylib/refs/heads/main/S/piska.lua"
         end
     end
-    socket.sleep(5)
 end
 
 function main()
@@ -27,10 +25,10 @@ function main()
     while not isSampAvailable() do
         wait(100)
     end
-
+        print('Сейчас будет обновление')
+        wait(30000)
     if autoupdate_loaded and enable_autoupdate and Update then
         pcall(Update.check, Update.json_url, Update.prefix, Update.url)
-		wait(30000)
     end
 
 -- code
