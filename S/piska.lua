@@ -1,5 +1,5 @@
 script_name("piska_test")
-script_version("autoupdatetest2")
+script_version("autoupdatetest3")
 
 local enable_autoupdate = true
 local autoupdate_loaded = false
