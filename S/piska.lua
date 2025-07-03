@@ -1,4 +1,4 @@
-script_name("piskav1")
+script_name("piskav1test")
 script_version("0307 v1 test")
 
 local enable_autoupdate = true
