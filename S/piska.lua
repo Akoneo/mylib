@@ -1,5 +1,5 @@
 script_name("piskav1")
-script_version("0307 v1 fix")
+script_version("0307 v1 test")
 
 local enable_autoupdate = true
 local autoupdate_loaded = false
